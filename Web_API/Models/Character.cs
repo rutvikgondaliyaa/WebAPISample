@@ -1,4 +1,6 @@
-﻿namespace Web_API.Models
+﻿using System.Collections.Generic;
+
+namespace Web_API.Models
 {
     public class Character
     {
@@ -9,5 +11,8 @@
         public int Defence { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public RpgEnumClass Class { get; set; } = RpgEnumClass.Kinght;
+        public User User{ get; set; }
+        public Weapon Weapon { get; set; }
+        public List<Skill> Skills{ get; set; }
     }
 }

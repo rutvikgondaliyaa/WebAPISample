@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Web_API.DTOS.Character;
+using Web_API.DTOS.Skill;
+using Web_API.DTOS.Wepon;
 
 namespace Web_API.Models
 {
@@ -9,6 +11,8 @@ namespace Web_API.Models
         {
             CreateMap<Character, GetCharacterDTO>();
             CreateMap<AddCharacterDTO, Character>();
+            CreateMap<Weapon, GetWeponDTO>();
+            CreateMap<Skill,GetSkillDTO>();
         }
     }
 }

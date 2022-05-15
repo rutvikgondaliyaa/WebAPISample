@@ -1,4 +1,7 @@
-﻿using Web_API.Models;
+﻿using System.Collections.Generic;
+using Web_API.DTOS.Skill;
+using Web_API.DTOS.Wepon;
+using Web_API.Models;
 
 namespace Web_API.DTOS.Character
 {
@@ -11,5 +14,9 @@ namespace Web_API.DTOS.Character
         public int Defence { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public RpgEnumClass Class { get; set; } = RpgEnumClass.Kinght;
+
+        public GetWeponDTO Wepon{ get; set; }
+        public List<GetSkillDTO> Skills{ get; set; }
+
     }
 }

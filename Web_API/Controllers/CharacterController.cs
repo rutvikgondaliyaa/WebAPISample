@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Web_API.DTOS.Character;
 using Web_API.Models;
@@ -60,5 +58,12 @@ namespace Web_API.Controllers
             }
             return Ok(response);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<ServiceResponse<List<GetCharacterDTO>>>> AddCharacterSkill(AddCharacterSkillDTO newCharacterSkill)
+        {
+            return await _characterService.AddChracterSkill(newCharacterSkill);
+        }
+
     }
 }
