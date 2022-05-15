@@ -18,6 +18,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Web_API.Data;
 using Web_API.Services.CharacterService;
+using Web_API.Services.FightService;
 using Web_API.Services.WeponService;
 
 namespace Web_API
@@ -66,6 +67,7 @@ namespace Web_API
                 });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IWeponService, WeponService>();
+            services.AddScoped<IFightService, FightService>();
 
         }
 

@@ -59,11 +59,11 @@ namespace Web_API.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<ServiceResponse<List<GetCharacterDTO>>>> AddCharacterSkill(AddCharacterSkillDTO newCharacterSkill)
-        {
-            return await _characterService.AddChracterSkill(newCharacterSkill);
-        }
+        //[HttpPost]
+        //public async Task<ActionResult<ServiceResponse<List<GetCharacterDTO>>>> AddCharacterSkill(AddCharacterSkillDTO newCharacterSkill)
+        //{
+        //    return await _characterService.AddChracterSkill(newCharacterSkill);
+        //}
 
     }
 }

@@ -16,7 +16,8 @@ namespace Web_API.Services.CharacterService
         Task<ServiceResponse<GetCharacterDTO>> UpdateCharacter(UpdateCharacterDTO updateCharacter);
 
         Task<ServiceResponse<List<GetCharacterDTO>>> DeleteCharacter(int id);
-        Task<ServiceResponse<List<GetCharacterDTO>>> AddChracterSkill(AddCharacterSkillDTO newCharacterSkill);
+
+        //Task<ServiceResponse<List<GetCharacterDTO>>> AddChracterSkill(AddCharacterSkillDTO newCharacterSkill);
 
     }
 }
